@@ -1,0 +1,220 @@
+.text{
+           color:white;
+           background:darkslategrey;
+           font-size:35px;  /* px pt em is*/
+		   text-decoration:underline;
+		   text-decoration:line-through;
+		   text-decoration:none;
+		   font-family:Comic Sans MS;
+		   font-weight:bold;
+		   padding:40px 40px 40px 40px;
+         }
+            .table{
+                background:black;
+                color:white;
+                font-size:20px;
+                }
+                .header{
+                     background-color:white;
+                }
+      a{
+ text-decoration:none;
+ color:#cc0000;
+}
+
+a.button,div.nav{
+
+ float:left;
+}
+a.button{
+ background-color:#cc0000;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:#003366;
+}
+a.button1,div.nav{
+
+ float:left;
+}
+a.button1{
+ background-color:#003366;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:forestgreen;
+}
+a.button2,div.nav{
+
+ float:left;
+}
+a.button2{
+ background-color:forestgreen;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:sienna;
+}
+a.button3,div.nav{
+
+ float:left;
+}
+a.button3{
+ background-color:sienna;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:darkslategrey;
+}
+a.button4,div.nav{
+
+ float:left;
+}
+a.button4{
+ background-color:darkslategrey;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:  #FF6600;
+}
+a.button5,div.nav{
+
+ float:left;
+}
+a.button5{
+ background-color:  #FF6600;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:red;
+}
+a.button6,div.nav{
+
+ float:left;
+}
+a.button6{
+ background-color:red;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+a{
+ text-decoration:none;
+ color:darkslategrey;
+}
+a.button7,div.nav{
+
+ float:left;
+}
+a.button7{
+ background-color:darkslategrey;
+ border:1px solid #660000;
+ border-radius:5px;
+ color:#fff;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+}
+      .title{
+             font-family;French Script MT;
+             color:maroon;
+           }
+     .sub{
+             color:Maroon;
+         }
+     .sub2{
+             background:orange;
+             color:white;
+             font-size:20px;
+          }
+     .titlesub{
+                font-family:French Script MT;
+                font-size:30px;
+                color:maroon;
+              }
+      .text2{
+              color:teal;
+              font-size:30px;
+              font-family:French Script MT;
+            }
+      .pd{
+           color:maroon;
+           font-size:20px;
+         }
+      .fp{
+           font-family:French Script MT;
+           color:maroon;
+           font-size:30px;
+         }
+               .del{
+               font-size:30px;
+            }
+        .added{
+                font-size:30px;
+              }
+        .footer{
+             background:darkslategrey;
+             color:white;
+             font-size:20px;
+             padding:20px 20px 20px 20px;
+           }
+
+     .head{
+            color:teal;
+            font-family:French Script MT;
+            font-size:60px;
+          }
+     .ab{
+           font-size:20px;
+         }
+         a.l{
+             text-align:rignt;
+           }
+
+        .body{
+             background:darkslategrey;
+             }
+        .fp{
+           font-family:French Script MT;
+           color:maroon;
+           font-size:30px;
+         }
+         .fp1{
+               font-family:Comic Sans MS;
+               color:teal;
+               font-size:45px;
+             }
+          .navbar{
+                 background:black;
+              }

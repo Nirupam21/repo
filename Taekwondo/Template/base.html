@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>TAEKWONDO APP</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% block stylesheet %}
+    {% endblock %}
+</head>
+<body class="header">
+<h3 class="text">Taekwondo App<sup>V1.0</sup></h3>
+{% if user.is_authenticated %}
+          <div class="navbar">
+               <a href="/about.html" class="button1">Home</a>
+               <a href="/player.html" class="button2">Players Table</a>
+               <a href="/add.html" class="button3">Add Player</a>
+               <a href="/findproduct.html" class="button4">Get Player Details</a>
+               <a href="/find.html" class="button5">Search</a>
+               <a href="/del.html" class="button6">Delete</a>
+               <a href="/tour.html" class="button7">Tournament</a>
+               <a href="/logout.html" class="button2">Logout</a>
+           </div>
+    <br/><br/><br/>
+     <div class="container">
+         {% block content %}
+         {% endblock %}
+     </div>
+     <div class="footer">
+            <p align="center"><b>&copy:#Taekwondo App : For Taekwondo Lovers</b><span style="color:red">&hearts;</span></p>
+     </div>
+     {% else %}
+        <div class="header">
+        <a href="/login.html" class="button5">Login</a>
+<h1><p class="head" align="center"><u>Taekwondo</u></p></h1><br/>
+<br/><br/>
+<p class ="ab">
+    Taekwondo from Korea is a Korean martial art, characterized by its emphasis on head-height kicks, jumping and spinning kicks, and fast kicking techniques.
+    Taekwondo was developed during the 1940s and 1950s by various martial artists who combined elements of karate and Chinese martial arts with traditional Korean martial arts traditions such as Taekkyeon, Subak, and Gwonbeop.The oldest governing body for taekwondo is the Korea Taekwondo Association (KTA), formed in 1959 through a collaborative effort by representatives from the nine original kwans, or martial arts schools, in Korea. The main international organizational bodies for taekwondo today are the International Taekwon-Do Federation (ITF), founded by Choi Hong Hi in 1966, and the partnership of the Kukkiwon and World Taekwondo (WT, formerly WTF), founded in 1972 and 1973 respectively by the Korea Taekwondo Association. Gyeorugi ([kjʌɾuɡi]), a type of full-contact sparring, has been an Olympic event since 2000. The governing body for taekwondo in the Olympics and Paralympics is World Taekwondo.
+    Beginning in 1945, shortly after the end of the WWII, new martial arts schools called kwans were opened in Seoul. These schools were established by Korean martial artists with backgrounds in Japanese, Chinese and Korean martial arts. The umbrella term traditional taekwondo typically refers to the martial arts practiced by the kwans during the 1940s and 1950s, though in reality the term "taekwondo" had not yet been coined at that time, and indeed each kwan was practicing its own unique style of martial art. During this time taekwondo was also adopted for use by the South Korean military, which increased its popularity among civilian martial arts schools.
+    After witnessing a martial arts demonstration by the military in 1952, South Korean President Syngman Rhee urged that the martial arts styles of the kwans be merged. Beginning in 1955 the leaders of the kwans began discussing in earnest the possibility of creating a unified style of Korean martial arts. The name Tae Soo Do was used to describe this unified style. This name consists of the hanja tae "to stomp, trample",su "hand" and do "way, discipline".
+    The emphasis speed and agility is a defining characteristic of taekwondo and has its origins in analyses undertaken by Choi Hong Hi. The results of that analysis are known by ITF practitioners as Choi's Theory of Power. Choi based his understanding of power on biomechanics and Newtonian physics as well as Chinese martial arts. For example, Choi observed that the power of a strike increases quadratically with the speed of the strike, but increases only linearly with the mass of the striking object. In other words, speed is more important than size in terms of generating power. This principle was incorporated into the early design of taekwondo and is still used.
+</p>
+        </div>
+ <div class="footer">
+            <p align="center"><b>&copy:#Taekwondo App : For Taekwondo Lovers</b><span style="color:red">&hearts;</span></p>
+     </div>
+     {% endif %}
+</body>
+</html>

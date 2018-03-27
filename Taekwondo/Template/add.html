@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<head>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+ <br/><br/>
+ <h3 class="titlesub"><u>Welcome To Add Details :</u></h3><hr/>
+     <form class="sub" method="POST" action="">
+     {% csrf_token %}
+     {{ form.as_p }}
+          <input type="submit"  class="btn btn-primary" value="Save Data"/>
+         {{ Msg }}
+     </form>
+</body>
+{% endblock %}

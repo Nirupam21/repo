@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+     <h1>Login</h1>
+     <br><br>
+     <form method="POST" action="">
+         {% csrf_token %}
+         <p>Username :</p>
+         <input type="text" name="u">
+         <p>Password :</p>
+         <input type="password" name="p">
+         <br><br>
+         <button type="submit" class="btn btn-success">Login</button>
+     </form>
+</body>
+</html>

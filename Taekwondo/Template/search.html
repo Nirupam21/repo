@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<table cellpadding="10">
+    <tr class="table">
+         <td><b>NAME</b></td>
+         <td><b>Gender</b></td>
+         <td><b>Weight Category</b></td>
+         <td><b>Age Group</b></td>
+         <td><b>Playing For</b></td>
+         <td><b>State</b></td>
+         <td><b>Country</b></td>
+     </tr>
+    {% for row in record %}
+     <tr>
+         <td><b>{{ row.name }}</b></td>
+         <td><b>{{ row.gender }}</b></td>
+         <td><b>{{ row.weightcategory }}</b></td>
+         <td><b>{{ row.agegroup }}</b></td>
+         <td><b>{{ row.PlayingFor }}</b></td>
+         <td><b>{{ row.state }}</b></td>
+         <td><b>{{ row.country }}</b></td>
+      </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

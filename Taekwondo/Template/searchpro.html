@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<br/><br/>
+<div class="pd">
+    <p>Name : {{ record.name }}</p>
+    <p>Gender : {{ record.gender }}</p>
+    <p>Age : {{ record.age }}</p>
+    <p>Age Group : {{ record.agegroup }}</p>
+    <p>Weight : {{ record.weight}}</p>
+    <p>Weight Category : {{ record.weightcategory }}</p>
+    <p>Playing For : {{ record.PlayingFor }}</p>
+    <p>State : {{ record.state }}</p>
+    <p>Country : {{ record.country }}</p>
+
+</div>
+
+{% endblock content %}

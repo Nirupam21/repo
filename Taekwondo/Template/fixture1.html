@@ -1,0 +1,89 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixtures</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script>
+        function Fixture(){
+               document.write('<body class="fixtable" background="{% static 'images/img6.jpg' %}">');
+               document.write('<h1 align="center" style="color:white;">Fixture Table</h1>');
+               var arr=[];
+               match=0;
+               count=0;
+               document.write('{% for row in record %}');
+                   arr.push("<b>{{row.name}} ({{row.PlayingFor}})</b>");
+                   count++;
+               document.write('{% endfor %}');
+               a=0;
+               document.write('<h3 style="color:white;"><u>Round of ',count,' :</u></h3>');
+               document.write('{% for row in record %}');
+                   rand = arr[Math.floor(Math.random() * arr.length)];
+                   document.write('<table cellpadding="10">');
+                   document.write('<tr>');
+                        a++;
+                        document.write('<td><b style="color:orange;">',rand,'</b></td></div>');
+                        if(a%2!=0){
+                                document.write('<td><br/><br/><br/><select>');
+                                document.write('<option><b>Select Winner</b></option>');
+                                document.write('{% for row in record %}');
+						           document.write('<option>{{row.name}} ({{row.PlayingFor}})</option>');
+						        document.write('{% endfor %}');
+					            document.write('</select></td>');
+                           }
+                   document.write('</tr>');
+                   document.write('</table>');
+                   d=arr.indexOf(rand);
+                   arr.splice(d,1);
+               document.write('{% endfor %}');
+               count=count/2;
+               while(count>=2){
+                       s=0;
+                       document.write('<h3 style="color:white;"><u>Round of ',count,' :</u></h3>');
+                       for(i=0;i<count;i++){
+                        match++;
+                        document.write('<table cellpadding="10">');
+                            document.write('<tr>');
+                                s++;
+                                document.write('<td><select>');
+                                document.write('<option>Winner of Match ',match,'</option>');
+                                document.write('{% for row in record %}');
+						           document.write('<option>{{row.name}} ({{row.PlayingFor}})</option>');
+						        document.write('{% endfor %}');
+					            document.write('</select></td>');
+                                if(s%2!=0){
+                                    document.write('<td><br/><br/><br/><select>');
+                                    document.write('<option>Select Winner</option>');
+                                    document.write('{% for row in record %}');
+						               document.write('<option>{{row.name}} ({{row.PlayingFor}})</option>');
+						            document.write('{% endfor %}');
+						            document.write('</select>');
+						            }
+						    document.write('</tr>');
+						 document.write('</table>');
+					   }
+					   count=count/2;
+				}
+				document.write('<style>');
+				   document.write('.fixtable{background-size:1400px;color:yellow;}');
+                document.write('</style>');
+                document.write('<br/><br/>');
+        }
+    </script>
+    <style>
+        .fix1{
+               color:orange;
+               background-size:1400px;
+               filter: alpha(opacity=40);
+             }
+
+    </style>
+</head>
+<body class="fix1" background="{% static 'images/img6.jpg' %}">
+        <h1 align="middle" style="color:white"><u>Players List</u><br/><br/></h1>
+                    {% for row in record %}
+                          <p>{{row.name}} ({{row.PlayingFor}})</p>
+                    {% endfor %}
+                    <button onclick="Fixture()" class="btn btn-success">Generate Fixture</button>
+</body>
+</html>

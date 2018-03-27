@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<br/><br/>
+<form method="POST" action="">
+    {% csrf_token %}
+    <h3 class="fp"><br/>Enter the Age Group :</h3><br/>
+    <select name="age">
+        <option>pee-wee</option>
+        <option>sub junior</option>
+        <option>junior</option>
+        <option>senior</option>
+        <option>senior black belt</option>
+    </select><br/>
+    <h3 class="fp">Enter the Weight Category :</h3><br/>
+    <select name="w">
+        <option>fin</option>
+        <option>fly</option>
+        <option>bantam</option>
+        <option>feather</option>
+        <option>light</option>
+        <option>welter</option>
+        <option>light middle</option>
+        <option>middle</option>
+        <option>light heavy</option>
+        <option>heavy</option>
+    </select><br/>
+    <h3 class="fp">Enter the Gender :</h3><br/>
+    <select name="gen">
+        <option>male</option>
+        <option>female</option>
+    </select><br/>
+    <input class="btn btn-success" type="submit" value="Search"/>
+    <span style="color:red"><b>{{ errMsg }}</b></span>
+</form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<br/><br/>
+<form method="POST" action="">
+    {% csrf_token %}
+    <h3 class="fp"><br/>Enter the Name :</h3><br/>
+    <input type="text" name="titletext"/>
+    <input class="btn btn-success" type="submit" value="Search"/>
+    <span style="color:red"><b>{{ errMsg }}</b></span>
+</form>
+{% endblock %}
