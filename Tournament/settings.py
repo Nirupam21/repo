@@ -25,7 +25,7 @@ SECRET_KEY = 'm8983u@6n%9#3%1a(co3mh3v(&1mtl_4#i=%(pq8v0mw^_a0ps'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['taekwon.herokuapp.com']
+ALLOWED_HOSTS = ['taekwonapp.herokuapp.com']
 
 
 # Application definition
